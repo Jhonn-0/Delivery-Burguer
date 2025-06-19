@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Hamburger</title>
+</head>
+<body>
+ <header>
+    <div class="container-nav">
+    <div class="nav-bar">
+        <img src="/assets/logo.png" alt="Logo Delivery Burguer" class="logo">
+    </div>
+    <div class="cart-icon" id="cartIcon">
+                <i class="fas fa-shopping-cart"></i>
+                <span id="cartCount" class="cart-count">0</span>
+            </div>
+<h1 class="nome">Delivery Burguer</h1> 
+<span class="endereço">Rua dev 01, Recife - PE</span>
+<div class="horarios">
+    <div class="datas">
+        <span class="horarios-span">Terc á Dom - 18:00 as 22:00</span>
+    </div>
+</div>
+</div>
+ </header>
+
+ <main class="container">
+<section class="hamburguers">
+    <h2>Cardápio</h2>
+    <div class="menu-hamburger">
+
+        <div class="hamburguer" data-name="Hamburger Smash" data-price="18.90">
+            <div class="img-burguer"><img src="/assets/3.png" alt=""></div>
+            <div class="descr-burger">
+                <h3>Hamburger Smash</h3>
+                        <p> Pão levinho de fermentação natural da Trigou, burger 160g, queijo prato e maionese da casa</p>
+                        <span class="price">R$ 18.90</span>
+                        <button class="add-to-cart-btn" data-item-id="smash">
+                            <i class="fas fa-shopping-cart"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="hamburguer" data-name="Hamburger Salad" data-price="25.90">
+            <div class="img-burguer"><img src="/assets/2.png" alt=""></div>
+            <div class="descr-burger">
+                <h3>Hamburger Salad</h3>
+                       <p>Pão levinho de fermentação natural da Trigou, burger 160g, queijo prato e maionese da casa </p>
+                        <span class="price">R$ 25.90</span>
+                        <button class="add-to-cart-btn" data-item-id="smash">
+                            <i class="fas fa-shopping-cart"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="hamburguer" data-name="Hamburger Salad" data-price="32.90">
+            <div class="img-burguer"><img src="/assets/4.png" alt=""></div>
+            <div class="descr-burger">
+                <h3>Hamburger</h3>
+                      <p> Pão levinho de fermentação natural da Trigou, burger 160g, queijo prato e maionese da casa </p>
+                        <span class="price">R$ 32.90</span>
+                        <button class="add-to-cart-btn" data-item-id="smash">
+                            <i class="fas fa-shopping-cart"></i>
+                </button>
+            </div>
+        </div>
+        <div class="hamburguer" data-name="Smash" data-price="35.90">
+            <div class="img-burguer"></div>
+            <img src="/assets/1.png" alt="">
+            <div class="descr-burger">
+                <h3>Smash</h3>
+                     <p>  Pão levinho de fermentação natural da Trigou, burger 160g, queijo prato e maionese da casa </p>
+                        <span class="price">R$ 35.90</span>
+                        <button class="add-to-cart-btn" data-item-id="smash">
+                            <i class="fas fa-shopping-cart"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="bebidas">
+    <h2>Bebidas</h2>
+    <div class="menu-bebidas">
+        <div class="bebida" data-name="Coca" data-price="7.90">
+             <div class="img-bebida"><img src="/assets/coca.png" alt=""></div>
+            <div class="descr-bebida">
+                <h3>coca</h3>
+                   
+                        <span class="price">R$ 7.90</span>
+                        <button class="add-to-cart-btn" data-item-id="coca">
+                            <i class="fas fa-shopping-cart"></i>
+                </button>
+        </div></div>
+        <div class="bebida" data-name="fanta" data-price="6.90">
+             <div class="img-bebida"><img src="/assets/fanta.png" alt=""></div>
+            <div class="descr-bebida">
+                <h3>fanta</h3>
+                  
+                        <span class="price">R$ 6.90</span>
+                        <button class="add-to-cart-btn" data-item-id="fanta">
+                            <i class="fas fa-shopping-cart"></i>
+                </button>
+        </div></div>
+        </div>
+</section>
+     <section class="container-modal">
+   <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Seu Carrinho</h2>
+            <div id="cartItemsContainer">
+                </div>
+            <div class="cart-summary">
+                Total: <span id="cartTotal">R$ 0.00</span>
+            </div>
+            <div class="delivery-address">
+                <label for="deliveryAddress">Endereço de entrega:</label>
+                <input type="text" id="deliveryAddress" placeholder="Digite seu endereço completo...">
+            </div>
+            <div class="modal-actions">
+                <button id="closeModalBtn" class="btn-secondary">Fechar</button>
+                <button id="finalizeOrderBtn" class="btn-primary">Finalizar Pedido</button>
+            </div>
+        </div>
+    </div>
+</section>
+</main>    
+
+<script src="script.js"></script>
+
+
+</body>
+</html>
