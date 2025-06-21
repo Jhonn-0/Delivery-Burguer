@@ -22,19 +22,20 @@ header {
     background-position: center;
     background-size: cover; /* Faz o background se ajustar à tela */
 
-  background-image: url(/assets/fundo.png);
+  background-image: url(/assets/Fundo.png);
   display: flex; /* Transforma o header em um container flex */
   width: 100%;
   height: 450px;
   position: relative; /* Adicione 'position: relative;' para que filhos absolutos (como o .Carrinho) possam se posicionar em relação a ele, se necessário */
 }
 .nav-bar {
+    background-color: #000000b4;
     border-radius: 50%;
-    top: 15%;
+    top: 6%;
   left: 50%;
   transform: translateX(-50%);
-  height: 150px;
-  width: 150px;
+  height: 200px;
+  width: 200px;
   box-sizing: 50%;
   /* max-width: 930px; -> Este max-width é redundante se já estiver no container-nav ou pode ser ajustado para o próprio nav-bar */
   /* O MAIOR PROBLEMA: REMOVA position: absolute; */
@@ -47,8 +48,8 @@ header {
 
 .logo {
     border-radius: 50%;
-  width: 200px;
-  height: 200px;
+  width: 180px;
+  height: 180px;
   /* Se o logo estiver dentro do .nav-bar, ele será centralizado pelas propriedades do .nav-bar */
 }
 
@@ -56,7 +57,7 @@ header {
     position: absolute;
     top: 40px;
     right: 40px;
-    color: rgb(0, 0, 0);
+    color: white;
     font-size: 1.8em;
     cursor: pointer;
     display: flex;
@@ -75,12 +76,14 @@ header {
 }
 
 .nome{
+    color: white;
     left: 50%;
     transform: translate(-50%);
     top:52%;
     position: absolute;
 }
 .endereço{
+    color: white;
     left: 50%;
     transform: translate(-50%);
     top:63%;
@@ -94,7 +97,7 @@ header {
 }
 .horarios-span{
     border-radius: 10px;
-    padding: 10px;
+    padding: 6px;
     background-color: azure;
 }
 /* section hamburber*/
